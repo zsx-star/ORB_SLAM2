@@ -1,0 +1,7 @@
+<!-- -->
+<launch>
+	<arg name="path" value="$(find ORB_SLAM2)/../../.."/>
+	<node name="rgbd_slam" pkg="ORB_SLAM2" type="RGBD" args="$(arg path)/Vocabulary/ORBvoc.txt $(arg path)/Examples/RGB-D/Zdzn.yaml" output="screen">
+	</node>
+	
+</launch>
